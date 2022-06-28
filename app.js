@@ -15,35 +15,35 @@ function playRound(playerSelection, computerSelection) {
     const computerChoice = computerSelection.toLowerCase();
     if (playerSelection === 'rock') {
         if (computerChoice === 'rock') {
-            return "You Tied! Rock equals Rock"
+            return "You Tied! Rock equals Rock";
         }
         else if (computerChoice === 'paper') {
-            return "You Lose! Paper beats Rock"
+            return "You Lose! Paper beats Rock";
         }
         else if (computerChoice === 'scissors') {
-            return "You Win! Rock beats Scissors"
+            return "You Win! Rock beats Scissors";
         }
     }
     else if (playerSelection === 'paper') {
         if (computerChoice === 'paper') {
-            return "You Tied! Paper equals Paper"
+            return "You Tied! Paper equals Paper";
         }
         else if (computerChoice === 'rock') {
-            return "You Win! Paper beats Rock"
+            return "You Win! Paper beats Rock";
         }
         else if (computerChoice === 'scissors') {
-            return "You Lose! Scissors beat Paper"
+            return "You Lose! Scissors beat Paper";
         }
     }
     else if (playerSelection === 'scissors') {
         if (computerChoice === 'scissors') {
-            return "You Tied! Scissors equal Scissors"
+            return "You Tied! Scissors equal Scissors";
         }
         else if (computerChoice === 'paper') {
-            return "You Win! Scissors beats Paper"
+            return "You Win! Scissors beats Paper";
         }
         else if (computerChoice === 'rock') {
-            return "You Lose! Rock beats Scissors"
+            return "You Lose! Rock beats Scissors";
         }
     }
 }
@@ -51,7 +51,8 @@ function playRound(playerSelection, computerSelection) {
 let game = () => {
     for (let i = 0; i < 5; i++) {
         const result = playRound(prompt('Rock, Paper, or Scissors?'),computerPlay());
-        console.log(result)
+        console.log(result);
     }
 } 
+
 game()
